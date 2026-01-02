@@ -320,7 +320,7 @@ declare global {
 		 * @param options Editing options
 		 */
 		edit(
-			callback?: (instance: HTMLCanvasElement | any) => void | HTMLCanvasElement,
+			callback?: (instance: HTMLCanvasElement , context: any) => void | HTMLCanvasElement,
 			options?: TextureEditOptions
 		): void
 		menu: Menu

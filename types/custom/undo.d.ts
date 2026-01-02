@@ -135,8 +135,9 @@ declare class UndoSystem {
 	finishEdit(action: string, aspects?: UndoAspects): UndoEntry
 	/**
 	 * Cancels an event before it was finished and reset the project to the state before
+	 * @param revert_changes reverts the changes made to the saved aspects
 	 */
-	cancelEdit(): void
+	cancelEdit(revert_changes = false): void
 	/**
 	 * Add keyframes to the current edit that were indirectly removed by moving other keyframes to their position
 	 * @param keyframes

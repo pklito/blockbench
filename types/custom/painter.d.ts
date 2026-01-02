@@ -39,6 +39,7 @@ declare namespace Painter {
 		h: number,
 		cb: () => void
 	): void
+	function copyCanvas(ctx: HTMLCanvasElement): HTMLCanvasElement
 	function getPixelColor(ctx: CanvasRenderingContext2D, x: number, y: number): void
 	function modifyCanvasSection(
 		ctx: CanvasRenderingContext2D,
